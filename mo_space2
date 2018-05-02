@@ -1,0 +1,2 @@
+#!/bin/sh
+mount /dev/sda4 /space2

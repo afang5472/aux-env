@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "Initiating sslocal service .."
+nohup sslocal -c /conf/ss.json &
