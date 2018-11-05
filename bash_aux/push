@@ -1,2 +1,31 @@
-#!/bin/sh
-scp ./$1 root@192.144.143.151:$2
+#!/bin/bash
+
+#show server infos
+echo "[1] NeSE BuildServer(16.04 x64)"
+echo "[2] NeSE WorkServer (18.04 x64)"
+echo "[3] NeSE MainServer (Centos6)"
+echo "[4] Self process server(local)"
+echo "[5] Self process server(remote)"
+echo "[6] Self VMServer(1804)"
+echo "[7] to be continue.."
+
+#read user choice
+read -p "Give me a choice: " SER_CHOICE
+echo $SER_CHOICE
+
+#perform login!
+if [ $SER_CHOICE == "1" ];then 
+scp -P622 $1 root@124.16.75.161:$2
+fi 
+if [ $SER_CHOICE == "3" ];then 
+ssh -P40010 $1 root@124.16.75.161:$2
+fi
+if [ $SER_CHOICE == "4" ];then
+ssh $1 root@192.144.143.151:$2
+fi
+if [ $SER_CHOICE == "5" ];then
+ssh -P27390 $1 root@afang.xyz:$2
+fi 
+if [ $SER_CHOICE == "6" ];then
+ssh $1 root@192.168.201.178:$2
+fi
