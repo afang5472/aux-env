@@ -18,14 +18,14 @@ if [ $SER_CHOICE == "1" ];then
 scp -P622 root@124.16.75.161:$1 $2
 fi 
 if [ $SER_CHOICE == "3" ];then 
-ssh -P40010 root@124.16.75.161:$1 $2
+scp -P40010 root@124.16.75.161:$1 $2
 fi
 if [ $SER_CHOICE == "4" ];then
-ssh root@192.144.143.151:$1 $2
+scp root@192.144.143.151:$1 $2
 fi
 if [ $SER_CHOICE == "5" ];then
-ssh -P27390 root@afang.xyz:$1 $2
+scp -P27390 root@afang.xyz:$1 $2
 fi 
 if [ $SER_CHOICE == "6" ];then
-ssh root@192.168.201.178:$1 $2
+scp root@192.168.201.178:$1 $2
 fi
