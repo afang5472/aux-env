@@ -7,7 +7,8 @@ echo "[3] NeSE MainServer (Centos6)"
 echo "[4] Self process server(local)"
 echo "[5] Self process server(remote)"
 echo "[6] Self VMServer(1804)"
-echo "[7] to be continue.."
+echo "[7] Self VMServer(1604)"
+echo "[8] to be continue.."
 
 #read user choice
 read -p "Give me a choice: " SER_CHOICE
@@ -27,5 +28,8 @@ if [ $SER_CHOICE == "5" ];then
 ssh -p27390 root@afang.xyz
 fi 
 if [ $SER_CHOICE == "6" ];then
-ssh root@192.168.201.178
+ssh root@192.168.220.128
+fi 
+if [ $SER_CHOICE == "7" ];then
+ssh root@192.168.220.133
 fi

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+a=$1
+echo "checking executable $a."
+
+chmod +x ./$a
+file ./$a
+checksec ./$a

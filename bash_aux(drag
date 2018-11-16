@@ -16,20 +16,20 @@ echo $SER_CHOICE
 
 #perform login!
 if [ $SER_CHOICE == "1" ];then 
-scp -P622 $1 root@124.16.75.161:$2
+scp -r -P622 root@124.16.75.161:$1 $2
 fi 
 if [ $SER_CHOICE == "3" ];then 
-scp -P40010 $1 root@124.16.75.161:$2
+scp -r -P40010 root@124.16.75.161:$1 $2
 fi
 if [ $SER_CHOICE == "4" ];then
-scp $1 root@192.144.143.151:$2
+scp -r root@192.144.143.151:$1 $2
 fi
 if [ $SER_CHOICE == "5" ];then
-scp -P27390 $1 root@afang.xyz:$2
+scp -r -P27390 root@afang.xyz:$1 $2
 fi 
 if [ $SER_CHOICE == "6" ];then
-scp -r $1 root@192.168.220.128:$2
-fi 
+scp -r root@192.168.220.128:$1 $2
+fi
 if [ $SER_CHOICE == "7" ];then
-scp -r $1 root@192.168.220.133:$2
+scp -r root@192.168.220.133:$1 $2
 fi
