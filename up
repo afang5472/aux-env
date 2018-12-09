@@ -1,0 +1,35 @@
+#!/bin/bash
+
+#show server infos
+echo "[1] NeSE BuildServer(16.04 x64)"
+echo "[2] NeSE BuildServer(16.04 x64)"
+echo "[3] NeSE BuildServer(16.04 x64)"
+echo "[4] NeSE BuildServer(16.04 x64)"
+echo "[5] NeSE BuildServer(16.04 x64)"
+echo "[6] NeSE BuildServer(16.04 x64)"
+echo "[7] NeSE BuildServer(16.04 x64)"
+echo "[8] to be continue.."
+
+#read user choice
+read -p "Give me a choice: " SER_CHOICE
+echo $SER_CHOICE
+
+#perform login!
+if [ $SER_CHOICE == "1" ];then 
+scp -P2222 -r $1 root@0.0.0.0:$2
+fi 
+if [ $SER_CHOICE == "3" ];then 
+scp -P2222 -r $1 root@0.0.0.0:$2
+fi
+if [ $SER_CHOICE == "4" ];then
+scp -P2222 -r $1 root@0.0.0.0:$2
+fi
+if [ $SER_CHOICE == "5" ];then
+scp -P2222 -r $1 root@0.0.0.0:$2
+fi 
+if [ $SER_CHOICE == "6" ];then
+scp -P2222 -r $1 root@0.0.0.0:$2
+fi 
+if [ $SER_CHOICE == "7" ];then
+scp -P2222 -r $1 root@0.0.0.0:$2
+fi

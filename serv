@@ -2,12 +2,12 @@
 
 #show server infos
 echo "[1] NeSE BuildServer(16.04 x64)"
-echo "[2] NeSE WorkServer (18.04 x64)"
-echo "[3] NeSE MainServer (Centos6)"
-echo "[4] Self process server(local)"
-echo "[5] Self process server(remote)"
-echo "[6] Self VMServer(1804)"
-echo "[7] Self VMServer(1604)"
+echo "[2] NeSE BuildServer(16.04 x64)"
+echo "[3] NeSE BuildServer(16.04 x64)"
+echo "[4] NeSE BuildServer(16.04 x64)"
+echo "[5] NeSE BuildServer(16.04 x64)"
+echo "[6] NeSE BuildServer(16.04 x64)"
+echo "[7] NeSE BuildServer(16.04 x64)"
 echo "[8] to be continue.."
 
 #read user choice
@@ -16,20 +16,20 @@ echo $SER_CHOICE
 
 #perform login!
 if [ $SER_CHOICE == "1" ];then 
-ssh -p622 root@124.16.75.161
+ssh -p2222 root@0.0.0.0
 fi 
 if [ $SER_CHOICE == "3" ];then 
-ssh -p40010 root@124.16.75.161
+ssh -p2222 root@0.0.0.0
 fi
 if [ $SER_CHOICE == "4" ];then
-ssh root@192.144.143.151
+ssh -p2222 root@0.0.0.0
 fi
 if [ $SER_CHOICE == "5" ];then
-ssh -p27390 root@afang.xyz
+ssh -p2222 root@0.0.0.0
 fi 
 if [ $SER_CHOICE == "6" ];then
-ssh root@192.168.220.128
+ssh -p2222 root@0.0.0.0
 fi 
 if [ $SER_CHOICE == "7" ];then
-ssh root@192.168.220.133
+ssh -p2222 root@0.0.0.0
 fi

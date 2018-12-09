@@ -1,4 +1,0 @@
-#!/bin/sh
-
-echo "Initiating sslocal service .."
-nohup sslocal -c /Users/afang/Desktop/afang_temp/shadow.json &
