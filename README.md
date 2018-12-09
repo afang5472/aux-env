@@ -4,5 +4,5 @@
 
 - auxbash: frequent usage self-define bash commands 
 
-- io: currently contains a tty simulator(pty) 
+- pty: currently contains a tty simulator 
 
